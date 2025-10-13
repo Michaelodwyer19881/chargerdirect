@@ -1,5 +1,4 @@
 import React from "react";
-
 const Header: React.FC = () => {
   const navLinks = [
     { label: "For hospitals", href: "/hospitals" },
@@ -14,7 +13,7 @@ const Header: React.FC = () => {
         {/* Logo Section */}
         <a href="/bookings" className="flex items-center">
           <img
-            src="src/assets/images/whitelogo.png"
+            src="/images/whitelogo.png"
             alt="ChargerDirect Logo"
             className="h-auto w-[300px]"
           />

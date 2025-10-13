@@ -17,7 +17,7 @@ const Hero: React.FC = () => {
               CHARGE <br />
               YOUR DEVICES ANYWHERE WITH{" "}
               <img
-                src="src/assets/images/whitelogo.png"
+                src="/images/whitelogo.png"
                 style={{ width: "300px", display: "inline-block" }}
               />
             </h1>
@@ -28,14 +28,14 @@ const Hero: React.FC = () => {
             <div>
               <a href="#">
                 <img
-                  src="src/assets/images/appstore.jpeg"
+                  src="/images/appstore.jpeg"
                   alt="App Store"
                   className="h-[48px] inline-block w-[160px]"
                 />
               </a>
               <a href="#">
                 <img
-                  src="src/assets/images/palystore.jpeg"
+                  src="/images/palystore.jpeg"
                   alt="App Store"
                   className="h-[48px] inline-block ml-4  w-[160px]"
                 />
@@ -51,7 +51,7 @@ const Hero: React.FC = () => {
             transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
           >
             <img
-              src="src/assets/images/img_charger_direct.jpeg"
+              src="/images/img_charger_direct.jpeg"
               alt="Hero"
               className="object-contain w-full h-full"
             />

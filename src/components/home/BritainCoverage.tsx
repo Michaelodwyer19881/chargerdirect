@@ -40,7 +40,7 @@ const BritainCoverage: React.FC = () => {
       <div className="container mx-auto px-4 py-8 relative z-10 flex items-center">
         {/* blended background image */}
         <img
-          src="src/assets/images/UK.png"
+          src="/images/UK.png"
           alt=""
           className="absolute w-auto h-[90%] right-0"
         />

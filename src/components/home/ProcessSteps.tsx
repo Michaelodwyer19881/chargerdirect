@@ -8,7 +8,7 @@ const ProcessSteps: React.FC = () => {
           {/* Step 1 */}
           <div
             className="step-item h-[450px] flex items-end p-8 rounded-2xl bg-cover bg-center transition-all duration-500 ease-in-out transform hover:scale-[1.03] hover:shadow-xl"
-            style={{ backgroundImage: "url('src/assets/images/image1.png')" }}
+            style={{ backgroundImage: "url('/images/image1.png')" }}
           >
             <div className="step-card transition-opacity duration-700 hover:opacity-90">
               <h2 className="font-semibold text-5xl mb-2 text-[#ccb5ff]">01</h2>
@@ -27,7 +27,7 @@ const ProcessSteps: React.FC = () => {
           {/* Step 2 */}
           <div
             className="step-item h-[450px] flex items-end p-8 rounded-2xl bg-cover bg-center transition-all duration-500 ease-in-out transform hover:scale-[1.03] hover:shadow-xl"
-            style={{ backgroundImage: "url('src/assets/images/image3.png')" }}
+            style={{ backgroundImage: "url('/images/image3.png')" }}
           >
             <div className="step-card transition-opacity duration-700 hover:opacity-90">
               <h2 className="font-semibold text-5xl mb-2 text-primary">02</h2>
@@ -40,7 +40,7 @@ const ProcessSteps: React.FC = () => {
           <div
             className="step-item h-[450px] flex items-start p-8 rounded-2xl relative bg-cover bg-center transition-all duration-500 ease-in-out transform hover:scale-[1.03] hover:shadow-xl"
             style={{
-              backgroundImage: "url('src/assets/images/image2.png')",
+              backgroundImage: "url('/images/image2.png')",
               backgroundColor: "#deddeb",
               backgroundBlendMode: "multiply",
               backgroundPosition: "center",
@@ -56,7 +56,7 @@ const ProcessSteps: React.FC = () => {
           <div
             className="step-item h-[450px] flex items-end p-8 rounded-2xl relative bg-cover bg-center transition-all duration-500 ease-in-out transform hover:scale-[1.03] hover:shadow-xl"
             style={{
-              backgroundImage: "url('src/assets/images/image4.jpg')",
+              backgroundImage: "url('/images/image4.jpg')",
               backgroundPosition: "center",
               backgroundSize: "contain",
             }}
@@ -73,7 +73,7 @@ const ProcessSteps: React.FC = () => {
           {/* Step 5 */}
           <div
             className="step-item h-[450px] flex items-end p-8 rounded-2xl bg-cover bg-center transition-all duration-500 ease-in-out transform hover:scale-[1.03] hover:shadow-xl"
-            style={{ backgroundImage: "url('src/assets/images/image5.png')" }}
+            style={{ backgroundImage: "url('/images/image5.png')" }}
           >
             <div className="step-card transition-opacity duration-700 hover:opacity-90">
               <h2 className="font-semibold text-5xl mb-2 text-primary">05</h2>
@@ -86,7 +86,7 @@ const ProcessSteps: React.FC = () => {
           {/* Step 6 */}
           <div
             className="step-item h-[450px] flex items-start p-8 rounded-2xl bg-cover bg-center transition-all duration-500 ease-in-out transform hover:scale-[1.03] hover:shadow-xl"
-            style={{ backgroundImage: "url('src/assets/images/image6.png')" }}
+            style={{ backgroundImage: "url('/images/image6.png')" }}
           >
             <div className="step-card transition-opacity duration-700 hover:opacity-90">
               <h2 className="font-semibold text-5xl mb-2 text-primary">06</h2>

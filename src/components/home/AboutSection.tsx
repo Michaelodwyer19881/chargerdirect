@@ -16,7 +16,7 @@ const AboutSection: React.FC = () => {
           >
             <h2 className="font-bold text-5xl mb-2">About </h2>
             <img
-              src="src/assets/images/whitelogo.png"
+              src={"/images/whitelogo.png"}
               style={{ width: "400px", display: "inline-block" }}
             />
             <div className="w-[85%]">
@@ -32,7 +32,7 @@ const AboutSection: React.FC = () => {
           </motion.div>
 
           <img
-            src="src/assets/images/chargerdirectimg1.jpeg"
+            src="/images/chargerdirectimg1.jpeg"
             alt="Charger Direct Logo"
             className="mb-6 md:mb-0 md:mr-10 w-[100%] h-[100%]"
           />
