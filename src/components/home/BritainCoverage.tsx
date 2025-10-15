@@ -36,21 +36,24 @@ const BritainCoverage: React.FC = () => {
   ];
 
   return (
-    <section className="britain-coverage relative overflow-hidden lg:py-20 py-12 bg-[#ced2fb]">
-      <div className="container mx-auto px-4 py-8 relative z-10 flex items-center">
+    <section className="britain-coverage relative overflow-hidden py-12 sm:py-16 lg:py-20 bg-[#ced2fb]">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-8 relative z-10 flex items-center">
         {/* blended background image */}
         <img
           src="/images/UK.png"
-          alt=""
-          className="absolute w-auto h-[90%] right-0"
+          alt="Charger direct UK.png"
+          className="absolute w-auto h-[60%] sm:h-[70%] md:h-[80%] lg:h-[90%] right-[100px] opacity-20 lg:opacity-100"
         />
-        <div className="w-full md:w-[40%]">
-          <h2 className="text-5xl font-bold mb-10 text-[#1A2253]">
+        <div className="w-full lg:w-[45%] xl:w-[50%] relative z-20">
+          <h2 className="text-2xl sm:text-4xl lg:text-5xl font-bold mb-6 sm:mb-8 lg:mb-10 text-[#1A2253]">
             Britain is covered
           </h2>
-          <ul className="grid grid-cols-2 gap-x-8 gap-y-2 font-semibold text-purple-800">
+          <ul className="grid grid-cols-2 gap-x-4 sm:gap-x-6 lg:gap-x-2 gap-y-1 font-semibold text-purple-900">
             {cities.map((city) => (
-              <li key={city} className="list-disc list-inside text-lg">
+              <li
+                key={city}
+                className="list-disc list-inside text-[14px] sm:text-[24px]"
+              >
                 {city}
               </li>
             ))}
