@@ -16,7 +16,7 @@ const AboutSection: React.FC = () => {
           >
             <h2 className="font-bold text-4xl md:text-5xl mb-2">About </h2>
             <img
-              src={"/images/whitelogo.png"}
+              src={"/images/whitelogo.jpeg"}
               className="w-[300px] md:w-[400px] inline-block"
             />
             <div className="w-[100%%] lg:w-[85%]">

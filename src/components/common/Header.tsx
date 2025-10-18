@@ -16,7 +16,7 @@ const Header: React.FC = () => {
         {/* Logo Section */}
         <a href="/bookings" className="flex items-center">
           <img
-            src="/images/whitelogo.png"
+            src="/images/whitelogo.jpeg"
             alt="ChargerDirect Logo"
             className="h-auto w-[200px] sm:w-[250px] lg:w-[300px]"
           />

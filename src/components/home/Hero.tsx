@@ -17,9 +17,9 @@ const Hero: React.FC = () => {
               CHARGE <br />
               YOUR DEVICES ANYWHERE WITH{" "}
               <img
-                src="/images/whitelogo.png"
+                src="/images/whitelogo.jpeg"
                 alt="ChargerDirect Logo"
-                className="w-[250px] lg:w-[300px] inline-block mt-2"
+                className="w-[250px] lg:w-[300px] inline-block"
               />
             </h1>
             <h5 className="my-4 sm:my-5 text-gray-600 font-medium text-xl sm:text-2xl w-full lg:w-[90%] mx-auto lg:mx-0">
