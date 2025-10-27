@@ -10,9 +10,9 @@ const Home: React.FC = () => {
     <div>
       <Hero />
       <ProcessSteps />
-      <AboutSection />
       <PowerBankSection />
       <BritainCoverage />
+      <AboutSection />
     </div>
   );
 };

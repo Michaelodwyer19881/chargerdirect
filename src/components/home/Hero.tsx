@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const Hero: React.FC = () => {
   return (
@@ -19,7 +20,7 @@ const Hero: React.FC = () => {
               <img
                 src="/images/whitelogo.jpeg"
                 alt="ChargerDirect Logo"
-                className="w-[250px] lg:w-[300px] inline-block"
+                className="w-[310px] md:w-[250px] lg:w-[300px] inline-block"
               />
             </h1>
             <h5 className="my-4 sm:my-5 text-gray-600 font-medium text-xl sm:text-2xl w-full lg:w-[90%] mx-auto lg:mx-0">
@@ -27,27 +28,20 @@ const Hero: React.FC = () => {
             </h5>
 
             <div className="flex flex-row items-center justify-start gap-3 sm:gap-4 mt-6">
-              <a
-                href="https://www.apple.com/app-store/"
-                className="inline-block"
-              >
+              <Link to="/coming-soon" className="inline-block">
                 <img
                   src="/images/appstore.jpeg"
                   alt="App Store"
                   className="h-[44px] sm:h-[48px] w-[150px] sm:w-[160px] inline-block"
                 />
-              </a>
-              <a
-                href="https://play.google.com/store/apps"
-                className="inline-block"
-                target="_blank"
-              >
+              </Link>
+              <Link to="/coming-soon" className="inline-block">
                 <img
                   src="/images/palystore.jpeg"
                   alt="Play Store"
                   className="h-[44px] sm:h-[48px] w-[150px] sm:w-[160px] inline-block"
                 />
-              </a>
+              </Link>
             </div>
           </motion.div>
 

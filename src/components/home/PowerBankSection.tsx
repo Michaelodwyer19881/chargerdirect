@@ -12,10 +12,6 @@ const PowerBankSection: React.FC = () => {
       </div>
 
       <div className="pl-5 sm:pl-15 pr-5 sm:pr-[10vw] py-10">
-        <h1 className="text-2xl md:text-4xl lg:text-5xl font-semibold text-white mb-10 lg:mb-20">
-          Powerbanks
-        </h1>
-
         {/* 6500mAh */}
         <div className="flex items-start mb-10 md:mb-20">
           <img

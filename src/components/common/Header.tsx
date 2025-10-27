@@ -14,7 +14,7 @@ const Header: React.FC = () => {
     <header className="w-full bg-white border-b border-gray-100 sticky top-0 z-50 py-5">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
         {/* Logo Section */}
-        <a href="/bookings" className="flex items-center">
+        <a href="/" className="flex items-center">
           <img
             src="/images/whitelogo.jpeg"
             alt="ChargerDirect Logo"
