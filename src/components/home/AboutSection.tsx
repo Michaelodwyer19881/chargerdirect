@@ -1,9 +1,13 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-const AboutSection: React.FC = () => {
+interface AboutSectionProps {
+  id?: string;
+}
+
+const AboutSection: React.FC<AboutSectionProps> = ({ id }) => {
   return (
-    <section className="about-section pt-20 pb-10 overflow-hidden">
+    <section id={id} className="about-section pt-20 pb-10 overflow-hidden">
       <div className="container mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-[50px] md:gap-[20px] items-center">
           {/* Left Side - Text */}
