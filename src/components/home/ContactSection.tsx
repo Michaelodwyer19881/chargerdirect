@@ -5,13 +5,14 @@ interface ContactSectionProps {
 }
 
 const ContactSection: React.FC<ContactSectionProps> = ({ id }) => {
-  const [result, setResult] = useState("");
+  const [result, setResult] = useState<string>("");
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setResult("Sending...");
 
-    const formData = new FormData(e.target);
+    const form = e.currentTarget;
+    const formData = new FormData(form);
     formData.append("access_key", "4ee3b6b6-a2ac-46b5-8b06-dbde7221cf30");
 
     const res = await fetch("https://api.web3forms.com/submit", {
@@ -19,10 +20,11 @@ const ContactSection: React.FC<ContactSectionProps> = ({ id }) => {
       body: formData,
     });
 
-    const data = await res.json();
+    const data: { success: boolean } = await res.json();
+
     if (data.success) {
       setResult("✅ Message sent successfully!");
-      e.target.reset();
+      form.reset();
     } else {
       setResult("❌ Something went wrong. Try again.");
     }
@@ -39,11 +41,11 @@ const ContactSection: React.FC<ContactSectionProps> = ({ id }) => {
             onSubmit={handleSubmit}
             className="w-full md:w-[700px] mx-auto p-5 md:p-10 bg-white rounded-2xl space-y-4"
           >
-            <div className=" mb-5 md:mb-10">
+            <div className="mb-5 md:mb-10">
               <h2 className="text-2xl md:text-4xl font-semibold text-center">
                 Contact Us
               </h2>
-              <p className="mt-2 text-lg text-center  md:text-[20px] text-gray-700">
+              <p className="mt-2 text-lg text-center md:text-[20px] text-gray-700">
                 Feel free to contact us through the form below:
               </p>
             </div>
@@ -53,7 +55,7 @@ const ContactSection: React.FC<ContactSectionProps> = ({ id }) => {
               name="name"
               placeholder="Your Name"
               required
-              className="w-full border border-purple-300 focus:border-purple-500 rounded-lg p-3 md:p-4 md:text-xl outline-none "
+              className="w-full border border-purple-300 focus:border-purple-500 rounded-lg p-3 md:p-4 md:text-xl outline-none"
             />
 
             <input
@@ -68,16 +70,16 @@ const ContactSection: React.FC<ContactSectionProps> = ({ id }) => {
               name="message"
               placeholder="Your Message"
               required
-              rows="4"
+              rows={4}
               className="w-full border border-purple-300 focus:border-purple-500 rounded-lg p-3 md:p-4 md:text-xl outline-none"
-            ></textarea>
+            />
 
             {/* Optional hidden honeypot field */}
             <input type="checkbox" name="botcheck" className="hidden" />
 
             <button
               type="submit"
-              className="w-full bg-purple-600 text-white p-3 md:p-4 md:text-xl rounded-lg hover:bg-purple-700 transition "
+              className="w-full bg-purple-600 text-white p-3 md:p-4 md:text-xl rounded-lg hover:bg-purple-700 transition"
             >
               Send Message
             </button>

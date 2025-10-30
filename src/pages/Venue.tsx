@@ -1,4 +1,3 @@
-import React from "react";
 import venueImg from "/images/venue.png";
 
 const Venue = () => {
