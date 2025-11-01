@@ -46,7 +46,7 @@ const ProcessSteps: React.FC = () => {
             className="step-item h-[380px] md:h-[450px] flex items-start p-5 md:p-8 rounded-2xl relative bg-cover bg-center transition-all duration-500 ease-in-out transform hover:scale-[1.03] hover:shadow-xl"
             style={{
               backgroundImage: "url('/images/image2.png')",
-              backgroundColor: "#deddeb",
+              backgroundColor: "#E6EAED",
               backgroundBlendMode: "multiply",
               backgroundPosition: "center",
               backgroundSize: "contain",
@@ -56,6 +56,10 @@ const ProcessSteps: React.FC = () => {
               <h2 className="font-semibold text-4xl md:text-5xl mb-2 text-primary">
                 03
               </h2>
+              <div className="font-semibold text-2xl md:text-3xl mb-2 text-[#6867D7] w-[200px] mt-[40px]">
+                Locate
+                <br /> Station
+              </div>
             </div>
           </div>
 
