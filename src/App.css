@@ -14,15 +14,6 @@
   color: #9a6bff;
 }
 
-/* HEADER SECTION */
-
-/* HERO SECTION */
-.hero {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
 /* STEPS */
 
 .step-item {

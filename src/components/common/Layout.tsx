@@ -1,3 +1,4 @@
+import Footer from "./Footer";
 import Header from "./Header";
 import { type ReactNode } from "react";
 
@@ -10,6 +11,7 @@ const Layout = ({ children }: LayoutProps) => {
     <div className="min-h-screen flex flex-col">
       <Header />
       <main className="flex-grow">{children}</main>
+      <Footer />
     </div>
   );
 };

@@ -9,10 +9,10 @@ const AboutSection: React.FC<AboutSectionProps> = ({ id }) => {
   return (
     <section id={id} className="about-section pt-20 pb-10 overflow-hidden">
       <div className="container mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-[50px] md:gap-[20px] items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-[50px] md:gap-[20px]">
           {/* Left Side - Text */}
           <motion.div
-            className=" lg:py-20 lg:pr-20"
+            className=" lg:pt-5 lg:pb-20 lg:pr-20"
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
@@ -23,18 +23,26 @@ const AboutSection: React.FC<AboutSectionProps> = ({ id }) => {
               src={"/images/whitelogo.jpeg"}
               className="w-[300px] md:w-[400px] inline-block"
             />
-            <div className="w-[100%%] lg:w-[85%]">
+
+            <div className="w-[100%%] lg:w-[90%]">
               <p className="mt-6 text-lg  md:text-[20px] text-gray-700">
                 Charger Direct is a licensed power bank rental operator serving
-                hospitals and f&b venues across Britain.
+                bars, clubs, hospitals and f&b venues across Britain.
               </p>
               <p className="mt-6 text-lg  md:text-[20px] text-gray-700 ">
-                A fully customizable screen and power banks.
+                Our team has been assembled from several other powerbank rental
+                companies which has allowed us to bring the best features into
+                one product.
               </p>
               <p className="mt-6 text-lg  md:text-[20px] text-gray-700">
                 Every charging station holds between 6 to 48 power banks
                 depending on the model is equipped with a payment terminal and a
                 QR code.
+              </p>
+              <p className="mt-6 text-lg  md:text-[20px] text-gray-700">
+                A fully customizable power bank and the highest revenue share
+                with venues has differntiated Charger Direct in a commoditized
+                industry.
               </p>
               <p className="mt-6 text-lg  md:text-[20px] text-gray-700">
                 Our network of power bank stations are owned and operated

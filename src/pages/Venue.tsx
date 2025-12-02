@@ -9,11 +9,15 @@ const Venue = () => {
             Overview
           </h2>
           <p className="text-gray-700 leading-relaxed text-xl">
-            Recent legislation has allowed pubs, clubs and restaurants to be
-            able to open later. This coupled with zero tolerance for drink
-            driving laws will only increase the demand for charging phones.
-            Indeed, the ability to find friends, call a taxi, or a ride-hailing
-            service all depend on a functioning phone.
+            Recent legislation has allowed pubs, clubs and restaurants to stay
+            open later. This coupled with zero tolerance for drink driving laws
+            will only increase the demand for charging phones. Indeed, the
+            ability to find friends, call a taxi, or access vital information
+            all depend on a functioning phone.
+          </p>
+          <p className="text-gray-700 leading-relaxed text-xl mt-3">
+            ChargerDirect offers free powerbank rentals to staff, the highest
+            revenue share in the industry, and a fully customizable experience.
           </p>
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-[40%_60%] gap-10 items-center mt-5">

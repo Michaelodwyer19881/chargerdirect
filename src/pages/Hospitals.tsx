@@ -23,9 +23,9 @@ const Hospitals = () => {
               foundations and blood donation campaigns.
             </p>
             <p className="text-gray-700 leading-relaxed text-xl">
-              Ultimately, our powerbank rental machines connectivity,
-              convenience, and supporting public health initiatives such as
-              blood donation drives, fundraising, and campaigns.
+              Ultimately, our powerbank rental machines provide connectivity,
+              convenience, and support public health initiatives such as blood
+              donation drives, fundraising, and campaigns.
             </p>
 
             <div className="mt-15">

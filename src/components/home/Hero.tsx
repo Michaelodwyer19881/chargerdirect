@@ -6,7 +6,7 @@ const Hero: React.FC = () => {
   return (
     <section className="hero-section overflow-hidden py-8 sm:py-12 lg:py-12">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="hero flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-10">
+        <div className="hero flex flex-col lg:flex-row  gap-8 lg:gap-10">
           {/* Left Text */}
           <motion.div
             className="w-full lg:w-[700px] text-left"
@@ -14,7 +14,7 @@ const Hero: React.FC = () => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
           >
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mt-0 lg:mt-10">
               CHARGE <br />
               YOUR DEVICES ANYWHERE
               <br /> WITH{" "}
