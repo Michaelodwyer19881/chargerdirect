@@ -5,6 +5,8 @@ import "./App.css";
 import ComingSoon from "./pages/ComingSoon";
 import Hospitals from "./pages/Hospitals";
 import Venue from "./pages/Venue";
+import Apps from './pages/Apps';       // renamed page
+
 
 function App() {
   return (
@@ -14,6 +16,8 @@ function App() {
         <Route path="/hospitals" element={<Hospitals />} />
         <Route path="/coming-soon" element={<ComingSoon />} />
         <Route path="/venues" element={<Venue />} />
+        <Route path="/app" element={<Apps/>} />
+
       </Routes>
     </Layout>
   );
