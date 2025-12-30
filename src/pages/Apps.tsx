@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 
 export default function Apps() {
-  const [appLive, setAppLive] = useState(false); // set true when ready
+  const [appLive] = useState(false); // set true when ready
 
   const IOS_APP_STORE_URL = 'https://apps.apple.com/app/idYOUR_APP_ID';
   const ANDROID_PLAY_STORE_URL = 'https://play.google.com/store/apps/details?id=YOUR_PACKAGE_NAME';
