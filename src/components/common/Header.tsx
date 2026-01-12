@@ -93,28 +93,24 @@ const Header: React.FC = () => {
           aria-label="Toggle menu"
         >
           <span
-            className={`w-6 h-0.5 bg-gray-800 transition-transform duration-300 ${
-              isMenuOpen ? "rotate-45 translate-y-2" : ""
-            }`}
+            className={`w-6 h-0.5 bg-gray-800 transition-transform duration-300 ${isMenuOpen ? "rotate-45 translate-y-2" : ""
+              }`}
           />
           <span
-            className={`w-6 h-0.5 bg-gray-800 transition-opacity duration-300 ${
-              isMenuOpen ? "opacity-0" : ""
-            }`}
+            className={`w-6 h-0.5 bg-gray-800 transition-opacity duration-300 ${isMenuOpen ? "opacity-0" : ""
+              }`}
           />
           <span
-            className={`w-6 h-0.5 bg-gray-800 transition-transform duration-300 ${
-              isMenuOpen ? "-rotate-45 -translate-y-2" : ""
-            }`}
+            className={`w-6 h-0.5 bg-gray-800 transition-transform duration-300 ${isMenuOpen ? "-rotate-45 -translate-y-2" : ""
+              }`}
           />
         </button>
       </div>
 
       {/* Mobile Menu */}
       <nav
-        className={`lg:hidden overflow-hidden transition-all duration-300 ease-in-out ${
-          isMenuOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
-        }`}
+        className={`lg:hidden overflow-hidden transition-all duration-300 ease-in-out ${isMenuOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
+          }`}
       >
         <ul className="mx-auto px-4 sm:px-6 pt-4 flex flex-col gap-2">
           {navLinks.map((link) => (
